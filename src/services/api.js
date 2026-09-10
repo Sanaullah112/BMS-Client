@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.CLIENT_API_URL;
+const baseURL = import.meta.env.CLIENT_API_URL || 'https://bms-server-tbav.onrender.com/api';
 
 export const api = axios.create({
   baseURL,
